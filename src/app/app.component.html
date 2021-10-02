@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<div style="background-color: blue;">
+    <section class="pricing py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" *ngFor="let card of cards">
+                    <app-card [title]="card.cardtitle" [cardcost]="card.cardcost" [noofusers]="card.noofusers" [storage]="card.storage" [project]="card.project" [access]="card.access" [privateproject]="card.privateproject" [phonesupport]="card.phonesupport" [subdomain]="card.subdomain"
+                        [status]="card.status"></app-card>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
