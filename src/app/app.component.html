@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<div class="container-fluid">
-    <div class="d-flex justify-content-center title">
-        <h3>Tasks</h3>
+<header>
+    <!-- Header Start -->
+    <div class="header-area">
+        <div class="main-header ">
+            <app-topborder></app-topborder>
+            <app-logoborder></app-logoborder>
+            <app-navigborder></app-navigborder>
+        </div>
     </div>
-    <app-list></app-list>
-</div>
+    <!-- Header End -->
+</header>
+<app-home *ngIf="showDefaultMessage" (activate)="toggleDefaultMessage(false)"></app-home>
+<router-outlet (activate)="toggleDefaultMessage(false)"></router-outlet>
+<app-footborder></app-footborder>
