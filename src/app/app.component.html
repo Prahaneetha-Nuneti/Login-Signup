@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<header>
-    <!-- Header Start -->
-    <div class="header-area">
-        <div class="main-header ">
-            <app-topborder></app-topborder>
-            <app-logoborder></app-logoborder>
-            <app-navigborder></app-navigborder>
+<div id="wrapper" class="row">
+    <div class="col-lg-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-lg-10">
+        <div class="row">
+            <h1>Home Page</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <router-outlet></router-outlet>
         </div>
     </div>
-    <!-- Header End -->
-</header>
-<app-home *ngIf="showDefaultMessage" (activate)="toggleDefaultMessage(false)"></app-home>
-<router-outlet (activate)="toggleDefaultMessage(false)"></router-outlet>
-<app-footborder></app-footborder>
+</div>

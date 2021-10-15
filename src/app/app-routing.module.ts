@@ -1,36 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WhatsnewComponent} from './whatsnew/whatsnew.component';
-import { HomeComponent} from './home/home.component';
-import { AboutComponent} from './about/about.component';
-import { ContactComponent} from './contact/contact.component';
-import { LatestComponent} from './latest/latest.component';
-import { DetailsComponent } from './details/details.component';
+import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { StudentEditComponent } from './student-edit/student-edit.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 const routes: Routes = [
   {
-    path : "whatsnew",
-    component : WhatsnewComponent
+    path : "create-student",
+    component : CreateStudentComponent
   },
   {
-    path : "home",
-    component : HomeComponent
+    path : "student-list",
+    component : StudentListComponent
   },
   {
-    path : "about",
-    component : AboutComponent
+    path : "student-edit/:id",
+    component : StudentEditComponent
   },
   {
-    path : "contact",
-    component : ContactComponent
+    path : "attendance",
+    component : AttendanceComponent
   },
   {
-    path : "latest",
-    component : LatestComponent
-  },
-  {
-    path : "details/:id",
-    component : DetailsComponent
+    path : "attendance-report",
+    component : AttendanceReportComponent
   }
 ];
 
