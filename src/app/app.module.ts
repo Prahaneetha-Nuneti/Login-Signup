@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
-import { ChartsModule } from 'ng2-charts';
+// import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignupComponent } from './signup/signup.component';
 // import { TopborderComponent } from './topborder/topborder.component';
 // import { LogoborderComponent } from './logoborder/logoborder.component';
 // import { NavigborderComponent } from './navigborder/navigborder.component';
@@ -26,12 +29,12 @@ import { AppComponent } from './app.component';
 // import { LatesttrendingComponent } from './latesttrending/latesttrending.component';
 // import { DetailsComponent } from './details/details.component';
 // import { FollowComponent } from './follow/follow.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { CreateStudentComponent } from './create-student/create-student.component';
-import { AttendanceComponent } from './attendance/attendance.component';
-import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
-import { StudentEditComponent } from './student-edit/student-edit.component';
-import { StudentListComponent } from './student-list/student-list.component';
+// import { SidebarComponent } from './sidebar/sidebar.component';
+// import { CreateStudentComponent } from './create-student/create-student.component';
+// import { AttendanceComponent } from './attendance/attendance.component';
+// import { AttendancestatusComponent } from './attendancestatus/attendancestatus.component';
+// import { StudentEditComponent } from './student-edit/student-edit.component';
+// import { StudentListComponent } from './student-list/student-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,12 +58,16 @@ import { StudentListComponent } from './student-list/student-list.component';
     // LatesttrendingComponent,
     // DetailsComponent,
     // FollowComponent,
-    SidebarComponent,
-    CreateStudentComponent,
-    AttendanceComponent,
-    AttendanceReportComponent,
-    StudentEditComponent,
-    StudentListComponent,
+    // SidebarComponent,
+    // CreateStudentComponent,
+    // AttendanceComponent,
+    // AttendanceReportComponent,
+    // StudentEditComponent,
+    // StudentListComponent,
+    LoginComponent,
+    DashboardComponent,
+    SignupComponent
+  
 
   ],
   imports: [
@@ -68,7 +75,7 @@ import { StudentListComponent } from './student-list/student-list.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ChartsModule
+    // ChartsModule
     
   ],
   providers: [],

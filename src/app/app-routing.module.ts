@@ -1,31 +1,51 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
-import { AttendanceComponent } from './attendance/attendance.component';
-import { CreateStudentComponent } from './create-student/create-student.component';
-import { StudentEditComponent } from './student-edit/student-edit.component';
-import { StudentListComponent } from './student-list/student-list.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+// import { AttendancestatusComponent } from './attendancestatus/attendancestatus.component';
+// import { AttendanceComponent } from './attendance/attendance.component';
+// import { CreateStudentComponent } from './create-student/create-student.component';
+// import { StudentEditComponent } from './student-edit/student-edit.component';
+// import { StudentListComponent } from './student-list/student-list.component';
 
 const routes: Routes = [
+  // {
+  //   path : "create-student",
+  //   component : CreateStudentComponent
+  // },
+  // {
+  //   path : "student-list",
+  //   component : StudentListComponent
+  // },
+  // {
+  //   path : "student-edit/:id",
+  //   component : StudentEditComponent
+  // },
+  // {
+  //   path : "attendance",
+  //   component : AttendanceComponent
+  // },
+  // {
+  //   path : "attendance-report",
+  //   component : AttendanceReportComponent
+  // }
   {
-    path : "create-student",
-    component : CreateStudentComponent
+    path:'',
+    redirectTo:"dashboard",
+    pathMatch:"full"
   },
   {
-    path : "student-list",
-    component : StudentListComponent
+    path:"login",
+    component:LoginComponent
   },
   {
-    path : "student-edit/:id",
-    component : StudentEditComponent
+    path:"signup",
+    component:SignupComponent
   },
   {
-    path : "attendance",
-    component : AttendanceComponent
-  },
-  {
-    path : "attendance-report",
-    component : AttendanceReportComponent
+    path:"dashboard",
+    component:DashboardComponent
   }
 ];
 

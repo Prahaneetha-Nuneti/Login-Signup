@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "email": "gshag@gmail.com",
+      "password": "5646",
+      "confirmpassword": "5646",
+      "dob": "2021-10-31",
+      "id": 2
+    },
+    {
+      "email": "prasa@gmail.com",
+      "password": "123",
+      "confirmpassword": "123",
+      "dob": "2021-10-28",
+      "id": 3
+    },
+    {
+      "email": "hai@gmail.com",
+      "password": "98",
+      "confirmpassword": "98",
+      "dob": "2021-10-30",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
